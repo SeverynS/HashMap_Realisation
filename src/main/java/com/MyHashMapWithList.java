@@ -5,19 +5,6 @@ import java.util.*;
 public class MyHashMapWithList {
     private ArrayList<Node> nodes;
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        MyHashMapWithList that = (MyHashMapWithList) o;
-        return nodes.equals(that.nodes);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(nodes);
-    }
-
     /**
      * Initialize your data structure here.
      */
@@ -55,9 +42,7 @@ public class MyHashMapWithList {
      */
     public void remove(int key) {
         Node tempNode = new Node(key);
-        if(nodes.contains(tempNode)){
             nodes.remove(tempNode);
-        }
     }
 
     @Override

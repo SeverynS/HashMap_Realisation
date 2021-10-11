@@ -16,7 +16,10 @@ public class Test2 {
         System.out.println(myHashMap);
         myHashMap.put(5, 150);
         System.out.println(myHashMap);
-
+        System.out.println(myHashMap.get(5));
+        myHashMap.put(7, 15);
+        myHashMap.put(123456, 1);
+        System.out.println(myHashMap);
     }
 
 }
